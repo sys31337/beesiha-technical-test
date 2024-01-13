@@ -1,0 +1,110 @@
+.button {
+  background-color: #855CFB;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popupContainer {
+  width: 80vw;
+}
+
+.popupContent {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 2px solid #855CFB;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 5px 5px 10px 10px rgba(133, 92, 251, 0.12);
+}
+
+.popupHeader {
+  background-color: #855CFB;
+  height: 46px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popupHeader p {
+  font-family: 'Metropolis', sans-serif;
+  font-weight: 700;
+  color: white;
+  padding: 17px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.popupHeader .close {
+  font-family: 'Metropolis', sans-serif;
+  background-color: white;
+  color: #855CFB;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  margin-right: 10px;
+  border: 0;
+}
+
+.popupBody {
+  padding: 20px;
+}
+
+.scrollableBody {
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.bottomSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  justify-content: center;
+}
+
+.visitsSection {
+  display: flex;
+  gap: 10px;
+}
+
+.visitsSection a {
+  text-decoration: none;
+  font-size: 10px;
+  color: #855CFB;
+}
+
+.disabledLink {
+  opacity: 0.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
