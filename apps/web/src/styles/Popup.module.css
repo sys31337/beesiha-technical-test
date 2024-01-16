@@ -21,6 +21,7 @@
 
 .popupContainer {
   width: 80vw;
+  max-width: 782px;
 }
 
 .popupContent {
@@ -68,12 +69,13 @@
 }
 
 .scrollableBody {
-  max-height: 400px;
+  max-height: 450px;
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
 .bottomSection {
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,11 +87,13 @@
 .visitsSection {
   display: flex;
   gap: 10px;
+  padding-top: 20px
 }
 
 .visitsSection a {
   text-decoration: none;
   font-size: 10px;
+  font-weight: 500;
   color: #855CFB;
 }
 
