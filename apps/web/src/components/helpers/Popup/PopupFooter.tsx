@@ -9,7 +9,7 @@ const PopupFooter: React.FC = () => {
       </button>
       <div className={styles.visitsSection}>
         <a href='#'> &lt; Visite précédente</a>
-        <a className={styles.disabledLink} href='#'> Visite précédente &gt; </a>
+        <a className={styles.disabledLink} href='#'> Visite suivante &gt; </a>
       </div>
     </div>
   )
